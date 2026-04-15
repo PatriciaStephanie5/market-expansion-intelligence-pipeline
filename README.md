@@ -75,3 +75,5 @@ END
 [Employee Count Estimate] * 0.4 +
 [Open Jobs Count] * 10 * 0.3 +
 LOG([Followers Count] + 1) * 0.3
+
+See [`docs/gtm_strategy.md`](docs/gtm_strategy.md) for detailed market entry recommendations.
