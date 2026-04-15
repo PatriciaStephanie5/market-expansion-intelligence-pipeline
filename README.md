@@ -1,25 +1,23 @@
 # Market Expansion Intelligence Pipeline
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Tableau](https://img.shields.io/badge/Tableau-2024.1-blue)] (https://public.tableau.com/app/profile/timba.patricia.stephanie/viz/MarketExpansionDashboard_17760155743840/Dashboard1)
 [![Make](https://img.shields.io/badge/Make-Automation-6D4AFF)](
 
-## 🎯 Project Overview
+## Project Overview
 
 An automated market intelligence pipeline that identifies, enriches, and prioritizes Y Combinator‑backed SaaS startups across Germany, France, and the Netherlands. Built for **Expandly**, a Series B B2B SaaS platform helping startups plan predictable geographic expansion.
 
 **Business Impact:**
-- ⏱️ Reduced manual research time from **3 weeks → 4 hours**
-- 🎯 Identified **16 high‑value targets** with firmographic enrichment
-- 📊 Delivered **interactive Tableau dashboard** for sales prioritization
+- Reduced manual research time from **3 weeks → 4 hours**
+- Identified **16 high‑value targets** with firmographic enrichment
+- Delivered **interactive Tableau dashboard** for sales prioritization
 
-## 🏢 Business Context
+## Business Context
 
 **Company:** Expandly (Series B, B2B SaaS)  
 **Challenge:** The Growth team lacked a clean, enriched dataset of target SaaS companies in three new European markets. Manual research was slow and missed key growth signals.  
 **Solution:** An automated pipeline that scrapes YC company data, enriches with LinkedIn firmographics, and visualizes in a sales‑ready dashboard.
 
-## 🔧 Technical Architecture
+## Technical Architecture
 
 ![Architecture Diagram](images/architecture_diagram.png)
 
@@ -32,7 +30,7 @@ An automated market intelligence pipeline that identifies, enriches, and priorit
 
 > **Note:** This project uses a **simulated dataset** for portfolio demonstration due to scraper subscription requirements. The pipeline is fully functional and ready for live data integration.
 
-## 📊 Key Features
+## Key Features
 
 - **Geographic Mapping:** Visualize company locations sized by employee count
 - **Tier Segmentation:** Auto‑categorize as Enterprise / Mid‑Market / SMB
@@ -40,7 +38,7 @@ An automated market intelligence pipeline that identifies, enriches, and priorit
 - **Interactive Filters:** Drill down by country, tier, and industry
 - **Live Google Sheets Connection:** Tableau refreshes on schedule
 
-## 🚀 Make Automation Workflow
+## Make Automation Workflow
 
 ![Make Scenario](images/make_scenario.png)
 
@@ -51,7 +49,7 @@ The Make scenario runs weekly to:
 
 **Blueprint:** `workflows/make_scenario_blueprint.json`
 
-## 📈 Tableau Dashboard
+## Tableau Dashboard
 
 ![Dashboard Screenshot](images/dashboard_screenshot.png)
 
