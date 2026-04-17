@@ -109,5 +109,5 @@ scraping resources
 ## Author
 
 **Timba Patricia Stephanie**  
-Junior GTM Data Analyst  
+Junior GTM Data Analyst and Clay & Data Specialist
 [GitHub](https://github.com/PatriciaStephanie5)
