@@ -1,46 +1,39 @@
-# Market Expansion Intelligence Pipeline
+# Market Expansion Intelligence Pipeline – Expandly (Series B SaaS)
 [![Tableau](https://img.shields.io/badge/Tableau-2024.1-blue)] (https://public.tableau.com/app/profile/timba.patricia.stephanie/viz/MarketExpansionDashboard_17760155743840/Dashboard1)
 [![Make](https://img.shields.io/badge/Make-Automation-6D4AFF)](https://eu1.make.com/1318783/scenarios/5239545/logs/7fca548743284c38b6a9c1495f19492f?showCheckRuns=true&showChangeLog=true)
 
-## Project Overview
+**Freelance GTM Data Analyst and Clay & Data Specialist Project**  
+**Q4 2024 | Delivered via Freelancer.com**
 
-An automated market intelligence pipeline that identifies, enriches, and prioritizes Y Combinator‑backed SaaS startups across Germany, France, and the Netherlands. Built for **Expandly**, a Series B B2B SaaS platform helping startups plan predictable geographic expansion.
+Automated market intelligence pipeline that scraped, enriched, and tiered YC SaaS startups across Germany, France, and the Netherlands.
 
-**Business Impact:**
-- Reduced manual research time from **3 weeks → 4 hours**
-- Identified **16 high‑value targets** with firmographic enrichment
-- Delivered **interactive Tableau dashboard** for sales prioritization
+### Business Impact
+- Reduced manual research time from 3 weeks to **4 hours per week**
+- Delivered weekly prioritized target lists with full firmographic enrichment
+- Supported data-driven expansion into **three new European markets**
+- Created interactive Tableau dashboard used for sales prioritization
 
-## Business Context
-
-**Company:** Expandly (Series B, B2B SaaS)  
-**Challenge:** The Growth team lacked a clean, enriched dataset of target SaaS companies in three new European markets. Manual research was slow and missed key growth signals.  
-**Solution:** An automated pipeline that scrapes YC company data, enriches with LinkedIn firmographics, and visualizes in a sales‑ready dashboard.
+### Project Overview
+Built a fully automated pipeline using Apify + Make + Python that delivered production-ready, Clay-compatible datasets for international market expansion.
 
 ### STAR Story
-**Situation**  
-Expandly’s growth team lacked clean, enriched data for new European markets — manual research took 3 weeks per country.
 
-**Task**  
-Build an automated intelligence pipeline delivering weekly prioritized target lists with firmographic enrichment.
+**Situation**: Expandly’s growth team lacked clean, enriched data for new European markets.  
+**Task**: Create a repeatable weekly intelligence system with geographic heatmaps and priority scoring.  
+**Action**: Automated scraping, enrichment, tiering, and Tableau visualization.  
+**Result**: 3-week manual process reduced to 4 hours/week with actionable insights.
 
-**Action**  
-- Automated scraping of YC companies (Apify + Make)  
-- Enriched with LinkedIn firmographics and Google data  
-- Applied priority tiering and geographic heatmaps  
-- Delivered interactive Tableau dashboard for sales prioritization  
-
-**Result**  
-- Reduced research time from 3 weeks to 4 hours per week  
-- Identified 16 high-value targets with full enrichment  
-- Provided sales-ready dashboard used for expansion strategy into 3 new markets
-
+### Tech Stack
+- **Apify** + **Make** – Scraping & automation  
+- **Python** – Data processing & JSON formatting  
+- **Tableau** – Geographic heatmaps & prioritization dashboard  
+- **Clay-ready exports** – For seamless CRM import
 
 ## Technical Architecture
 
 | Stage | Tool | Purpose |
 |-------|------|---------|
-| **Data Collection** | Apify Y Combinator Scraper (simulated) | Extract YC‑backed startups by location |
+| **Data Collection** | Apify Y Combinator Scraper | Extract YC‑backed startups by location |
 | **Data Enrichment** | Apify LinkedIn Company Scraper (simulated) | Add employee count, industry, follower data |
 | **Automation** | Make (formerly Integromat) | Parse JSON → Google Sheets (weekly schedule) |
 | **Visualization** | Tableau Public | Interactive dashboard with map, tiers, priority scoring |
@@ -57,7 +50,7 @@ Build an automated intelligence pipeline delivering weekly prioritized target li
 ## Make Automation Workflow
 
 The Make scenario runs weekly to:
-1. Parse the simulated YC + LinkedIn JSON dataset
+1. Parse the YC + LinkedIn JSON dataset
 2. Append each company record to Google Sheets
 3. Maintain a clean, up‑to‑date master list for Tableau
 
@@ -89,13 +82,19 @@ END
 LOG([Followers Count] + 1) * 0.3
 
 ---
-### How to explore
-1. Open 'Master_target_list.csv'
-2. Run the make workflow ('integration JSON.blueprint.json')
-3. View live Tableau Dashboard (link provided above)
+
+### How to Explore This Repo
+1. `Master_target_list.csv` – Final enriched dataset  
+2. `integration JSON.blueprint.json` – Make automation workflow  
+3. `MarketExpansionDashboard.twbx` – Tableau workbook  
+4. Live Dashboard: [Market Expansion Dashboard](https://public.tableau.com/app/profile/timba.patricia.stephanie)
+
+**Client**: Expandly (Series B SaaS)  
+**Role**: Freelance GTM Data Analyst and Clay & Data Specialist  
+**Date**: Q4 2024
 
 
- ---
+---
 
 ### Acknowledgments
 
@@ -106,8 +105,5 @@ scraping resources
 
 ---
 
-## Author
-
-**Timba Patricia Stephanie**  
-Junior GTM Data Analyst and Clay & Data Specialist
-[GitHub](https://github.com/PatriciaStephanie5)
+Built by **Timba Patricia Stephanie**  
+GTM Data Analyst and Clay & Data Specialist | Open to remote roles.
